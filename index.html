@@ -4,51 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Josh Kim | Computer Science Student</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="10.css" />
 </head>
+
 <body>
+  <div class="container">
 
-<header>
-  <h1>Josh Kim</h1>
-  <p>Computer Science Student | Junior Software Developer</p>
-  <div class="links">
-    <a href="https://github.com/JK76761" target="_blank">GitHub</a>
-    <a href="mailto:zio76152583@gmail.com">Email</a>
+    <nav class="nav">
+      <a class="brand" href="#top">Josh Kim</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="hero-badge">Computer Science Student @ QUT</div>
+      <h1 class="hero-title">
+        Building practical software through real-world projects.
+      </h1>
+      <p class="hero-subtitle">
+        I’m Josh Kim, a Brisbane-based Computer Science student focused on project-based development.
+        I enjoy turning messy real-world workflows into clean, usable systems with clear logic and solid code.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+
+      <div class="power-links">
+        <a class="pill" href="https://github.com/JK76761" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <!-- LinkedIn 있으면 아래 링크 교체 -->
+        <a class="pill" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <!-- Resume PDF 나중에 넣을 때 경로 바꾸기: assets/resume/Josh_Kim_Resume.pdf -->
+        <a class="pill" href="#" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="section-desc">A bit more detail about who I am and how I work.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>What I’m focusing on</h3>
+          <p>
+            I’m a Computer Science student at QUT who learns best by building.
+            I’ve worked on web-based prototypes and project-based applications, focusing on
+            clean structure, readable code, and practical outcomes.
+          </p>
+          <p>
+            I’m interested in junior software roles where I can contribute to real features,
+            collaborate in a team, and keep improving my fundamentals (algorithms, data structures, and engineering practices).
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Quick facts</h3>
+          <ul class="list">
+            <li><span>Location</span><span>Brisbane, AU</span></li>
+            <li><span>Education</span><span>QUT — Computer Science</span></li>
+            <li><span>Strengths</span><span>Project execution, practical problem solving</span></li>
+            <li><span>Interests</span><span>Software dev, web apps, system workflows</span></li>
+          </ul>
+
+          <div class="mini-tags">
+            <span>Java</span><span>JavaScript</span><span>C</span><span>Python</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-desc">Selected work that shows my approach and skills.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="project-top">
+            <h3>Junior Ranger Academy Placement Platform</h3>
+            <div class="tag">Featured</div>
+          </div>
+          <p>
+            Prototype web-based placement coordination platform to replace manual email and spreadsheet workflows.
+            Focused on clarity, usability, and reducing admin overhead.
+          </p>
+          <div class="stack">
+            <span>JavaScript</span><span>Microsoft 365</span><span>Workflow design</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a class="btn small ghost" href="#contact">Ask about it</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-top">
+            <h3>Digital Fortune Cookies (Wisdom Bites)</h3>
+          </div>
+          <p>
+            Student-focused web application that delivers personalised daily content.
+            Built with a simple, clean interface and clear interaction flow.
+          </p>
+          <div class="stack">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="section-desc">If you want to chat about roles, projects, or collaborations.</p>
+      </div>
+
+      <div class="card contact-card">
+        <div class="contact-row">
+          <div>
+            <div class="label">Email</div>
+            <a class="contact-link" href="mailto:zio76152583@gmail.com">zio76152583@gmail.com</a>
+          </div>
+          <div>
+            <div class="label">GitHub</div>
+            <a class="contact-link" href="https://github.com/JK76761" target="_blank" rel="noopener noreferrer">github.com/JK76761</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Josh Kim · Built with HTML/CSS · Hosted on GitHub Pages</p>
+    </footer>
+
   </div>
-</header>
 
-<section>
-  <h2>About</h2>
-  <p>
-    Computer Science student at QUT with hands-on experience developing
-    project-based web applications. Focused on practical problem solving
-    and real-world projects.
-  </p>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Junior Ranger Academy Placement Platform</h3>
-    <p>Web-based placement coordination platform replacing manual email and spreadsheet workflows.</p>
-    <p class="tech">JavaScript · Microsoft 365</p>
-  </div>
-
-  <div class="project">
-    <h3>Digital Fortune Cookies (Wisdom Bites)</h3>
-    <p>Student-focused web application delivering personalised daily content.</p>
-    <p class="tech">JavaScript · HTML · CSS</p>
-  </div>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <p>Java · JavaScript · C · Python · HTML · CSS · GitHub</p>
-</section>
-
-<footer>
-  <p>Brisbane, Australia</p>
-</footer>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
